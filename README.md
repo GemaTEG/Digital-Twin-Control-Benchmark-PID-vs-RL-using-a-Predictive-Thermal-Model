@@ -292,13 +292,13 @@ This summarizes performance robustness over multiple runs between RL and PI cpnt
   <img src="https://github.com/GemaTEG/Digital-Twin-Control-Benchmark-PID-vs-RL-using-a-Predictive-Thermal-Model/blob/main/Assets/RL_PI%20IAE_ITAE.png" alt="Error distribution: PID vs RL" width="900"/>
 </p>
 
-<p><b>2) Overshoot plots across multiple setpoints</b><br/>
+<p><b>3) Overshoot plots across multiple setpoints</b><br/>
 This summarizes performance overshoot between RL and PI controller across miultiple setponts </p>
 <p>
   <img src="https://github.com/GemaTEG/Digital-Twin-Control-Benchmark-PID-vs-RL-using-a-Predictive-Thermal-Model/blob/main/Assets/RL_PI%20overshoot.png" alt="Error distribution: PID vs RL" width="900"/>
 </p>
 
-<p><b>3) Energy Consumption comparation between RL and PI</b><br/>
+<p><b>4) Energy Consumption comparation between RL and PI</b><br/>
 This shows the comparasion plots acrross multiple setpoint betwwen RL and PI controller of Energy comsumption.</p>
 <p>
   <img src="https://github.com/GemaTEG/Digital-Twin-Control-Benchmark-PID-vs-RL-using-a-Predictive-Thermal-Model/blob/main/Assets/RL_PI%20current.png" alt="Control effort and slew: PID vs RL" width="900"/>
