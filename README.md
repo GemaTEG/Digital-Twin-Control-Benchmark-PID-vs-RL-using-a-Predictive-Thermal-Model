@@ -255,7 +255,7 @@ model.save("sac_tec_env")</code></pre>
 
 <hr/>
 
-<h2>Evaluation & Results</h2>
+<h2>10)Evaluation & Results</h2>
 
 <p>
 This repository benchmarks a classical PI/PID-style controller against a Reinforcement Learning (RL) policy using the
@@ -273,11 +273,11 @@ setpoint schedule, action limits, and episode length).
 
 <h3>Key metrics</h3>
 <ul>
-  <li><b>MAE / RMSE:</b> average tracking error over the episode.</li>
+  <li><b>IAE / ITAE:</b> average tracking error over the episode.</li>
   <li><b>Overshoot:</b> maximum deviation above setpoint during transients.</li>
   <li><b>Settling time:</b> time to enter and remain within a tolerance band (e.g., ±0.5°C).</li>
   <li><b>Control effort:</b> average or integrated TEC current magnitude.</li>
-  <li><b>Slew (smoothness):</b> average |Δcurrent| per time-step.</li>
+ 
 </ul>
 
 <h3>Plots</h3>
@@ -285,7 +285,7 @@ setpoint schedule, action limits, and episode length).
 <p><b>1) Temperature tracking (overlay)</b><br/>
 RL tracks the setpoint with reduced oscillation and faster convergence compared to the baseline controller.</p>
 <p>
-  <img src="assets/figures/tracking_overlay.png" alt="Temperature tracking: PID vs RL" width="900"/>
+  <img src="https://github.com/GemaTEG/Digital-Twin-Control-Benchmark-PID-vs-RL-using-a-Predictive-Thermal-Model/blob/main/Assets/RL_PI%20compare_42.png" alt="Temperature tracking: PID vs RL" width="900"/>
 </p>
 
 <p><b>2) Error distribution across episodes</b><br/>
@@ -300,11 +300,7 @@ This shows whether improved tracking is achieved without excessive current usage
   <img src="assets/figures/effort_slew.png" alt="Control effort and slew: PID vs RL" width="900"/>
 </p>
 
-<p><b>4) RL training curve (optional)</b><br/>
-Useful to show learning progress (e.g., episode reward increasing / stabilizing).</p>
-<p>
-  <img src="assets/figures/reward_curve.png" alt="RL training curve" width="900"/>
-</p>
+
 
 <h3>Summary</h3>
 <p>
