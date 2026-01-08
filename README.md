@@ -12,8 +12,6 @@
     </a>
   </p>
 <hr/>
-
-<h2>1) What this repository is</h2>
 <p>
   This project uses a previously trained machine-learning thermal model as a <b>plant surrogate</b> (digital twin)
   to simulate a TEC-based cooling controller. The goal is to compare:
