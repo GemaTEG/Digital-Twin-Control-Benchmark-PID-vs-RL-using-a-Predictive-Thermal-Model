@@ -253,18 +253,6 @@ model.save("sac_tec_env")</code></pre>
 
 <hr/>
 
-<h2>10) License</h2>
-<p>
-  This repository reuses ideas and/or artifacts from the upstream project. Please ensure you:
-</p>
-<ul>
-  <li>Keep the upstream license terms if you copied code or model artifacts</li>
-  <li>Preserve attribution (link to the original repository)</li>
-</ul>
-<p>
-  If the upstream repo includes a license file, copy it here and follow its requirements.
-</p>
-
 
 
 <div align="center">
