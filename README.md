@@ -282,22 +282,28 @@ setpoint schedule, action limits, and episode length).
 
 <h3>Plots</h3>
 
-<p><b>1) Temperature tracking (overlay)</b><br/>
-RL tracks the setpoint with reduced oscillation and faster convergence compared to the baseline controller.</p>
+<p><b>1) Temperature  and current tracking (overlay)</b><br/>
+RL tracks the setpoint with reduced oscillation and faster convergence compared to the baseline controller, it also shows Control effort & smoothness, whether improved tracking is achieved without excessive current usage or aggressive actuation changes.</p>
 <p>
   <img src="https://github.com/GemaTEG/Digital-Twin-Control-Benchmark-PID-vs-RL-using-a-Predictive-Thermal-Model/blob/main/Assets/RL_PI%20compare_42.png" alt="Temperature tracking: PID vs RL" width="900"/>
 </p>
 
-<p><b>2) Error distribution across episodes</b><br/>
-This summarizes performance robustness over multiple runs. Lower median and tighter spread indicate better control.</p>
+<p><b>2) Error plots across multiple setpoints</b><br/>
+This summarizes performance robustness over multiple runs between RL and PI cpntroller  accross multiple setpoints. Lower the  better.</p>
 <p>
-  <img src="assets/figures/error_boxplot.png" alt="Error distribution: PID vs RL" width="900"/>
+  <img src="https://github.com/GemaTEG/Digital-Twin-Control-Benchmark-PID-vs-RL-using-a-Predictive-Thermal-Model/blob/main/Assets/RL_PI%20IAE_ITAE.png" alt="Error distribution: PID vs RL" width="900"/>
 </p>
 
-<p><b>3) Control effort & smoothness</b><br/>
-This shows whether improved tracking is achieved without excessive current usage or aggressive actuation changes.</p>
+<p><b>2) Overshoot plots across multiple setpoints</b><br/>
+This summarizes performance overshoot between RL and PI controller across miultiple setponts </p>
 <p>
-  <img src="assets/figures/effort_slew.png" alt="Control effort and slew: PID vs RL" width="900"/>
+  <img src="https://github.com/GemaTEG/Digital-Twin-Control-Benchmark-PID-vs-RL-using-a-Predictive-Thermal-Model/blob/main/Assets/RL_PI%20overshoot.png" alt="Error distribution: PID vs RL" width="900"/>
+</p>
+
+<p><b>3) Energy Consumption comparation between RL and PI</b><br/>
+This shows the comparasion plots acrross multiple setpoint betwwen RL and PI controller of Energy comsumption.</p>
+<p>
+  <img src="https://github.com/GemaTEG/Digital-Twin-Control-Benchmark-PID-vs-RL-using-a-Predictive-Thermal-Model/blob/main/Assets/RL_PI%20current.png" alt="Control effort and slew: PID vs RL" width="900"/>
 </p>
 
 
