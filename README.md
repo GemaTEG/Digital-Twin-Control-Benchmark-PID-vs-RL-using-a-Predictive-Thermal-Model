@@ -253,6 +253,65 @@ model.save("sac_tec_env")</code></pre>
 
 <hr/>
 
+<hr/>
+
+<h2>Evaluation & Results</h2>
+
+<p>
+This repository benchmarks a classical PI/PID-style controller against a Reinforcement Learning (RL) policy using the
+thermal-model digital twin. Both controllers are evaluated under identical simulation conditions (same initial state,
+setpoint schedule, action limits, and episode length).
+</p>
+
+<h3>Evaluation protocol</h3>
+<ul>
+  <li><b>Scenario parity:</b> PID and RL run on the same episodes / seeds.</li>
+  <li><b>Constraints:</b> identical TEC current limits and sampling time.</li>
+  <li><b>Setpoint schedule:</b> fixed steps / ramps or randomized within a defined range.</li>
+  <li><b>Metrics:</b> tracking error, overshoot, settling time, effort, and smoothness (slew).</li>
+</ul>
+
+<h3>Key metrics</h3>
+<ul>
+  <li><b>MAE / RMSE:</b> average tracking error over the episode.</li>
+  <li><b>Overshoot:</b> maximum deviation above setpoint during transients.</li>
+  <li><b>Settling time:</b> time to enter and remain within a tolerance band (e.g., ±0.5°C).</li>
+  <li><b>Control effort:</b> average or integrated TEC current magnitude.</li>
+  <li><b>Slew (smoothness):</b> average |Δcurrent| per time-step.</li>
+</ul>
+
+<h3>Plots</h3>
+
+<p><b>1) Temperature tracking (overlay)</b><br/>
+RL tracks the setpoint with reduced oscillation and faster convergence compared to the baseline controller.</p>
+<p>
+  <img src="assets/figures/tracking_overlay.png" alt="Temperature tracking: PID vs RL" width="900"/>
+</p>
+
+<p><b>2) Error distribution across episodes</b><br/>
+This summarizes performance robustness over multiple runs. Lower median and tighter spread indicate better control.</p>
+<p>
+  <img src="assets/figures/error_boxplot.png" alt="Error distribution: PID vs RL" width="900"/>
+</p>
+
+<p><b>3) Control effort & smoothness</b><br/>
+This shows whether improved tracking is achieved without excessive current usage or aggressive actuation changes.</p>
+<p>
+  <img src="assets/figures/effort_slew.png" alt="Control effort and slew: PID vs RL" width="900"/>
+</p>
+
+<p><b>4) RL training curve (optional)</b><br/>
+Useful to show learning progress (e.g., episode reward increasing / stabilizing).</p>
+<p>
+  <img src="assets/figures/reward_curve.png" alt="RL training curve" width="900"/>
+</p>
+
+<h3>Summary</h3>
+<p>
+Across the evaluated scenarios, the RL controller achieves lower tracking error and improved transient response compared
+to the baseline PID/PI controller while respecting actuator limits. See the plots above for qualitative behavior and
+the metrics reported in the notebook for quantitative results.
+</p>
 
 
 <div align="center">
