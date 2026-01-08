@@ -1,4 +1,3 @@
-# Digital-Twin-Control-Benchmark-PID-vs-RL-using-a-Predictive-Thermal-Model
 <div align="center">
   <h1>Digital Twin Control Benchmark (PID/PI vs RL) using a Predictive Thermal Model</h1>
   <p>
