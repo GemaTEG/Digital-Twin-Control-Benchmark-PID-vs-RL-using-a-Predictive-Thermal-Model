@@ -288,8 +288,8 @@ model.save("sac_tec_env")</code></pre>
 
 <div align="center">
   <p>
-    <b>Maintainer:</b> (your name / handle)<br/>
-    <b>Contact:</b> (optional)
+    <b>Maintainer:</b> (shahkarKhan24)<br/>
+    
   </p>
 </div>
 
