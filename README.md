@@ -1,4 +1,4 @@
-<div align="center">
+
   <h1>Digital Twin Control Benchmark (PID/PI vs RL) using a Predictive Thermal Model</h1>
   <p>
     A simulation framework that turns a trained thermal predictor into a <b>digital twin</b> and benchmarks
@@ -11,7 +11,6 @@
       https://github.com/GemaTEG/Predictive-Thermal-Model-of-Cooling-Controller
     </a>
   </p>
-</div>
 <hr/>
 
 <h2>1) What this repository is</h2>
@@ -266,25 +265,7 @@ model.save("sac_tec_env")</code></pre>
   If the upstream repo includes a license file, copy it here and follow its requirements.
 </p>
 
-<hr/>
 
-<h2>11) Citation / credit</h2>
-<p>
-  If you use this work, please credit:
-</p>
-<ul>
-  <li>
-    Upstream thermal model repository:
-    <a href="https://github.com/GemaTEG/Predictive-Thermal-Model-of-Cooling-Controller">
-      GemaTEG/Predictive-Thermal-Model-of-Cooling-Controller
-    </a>
-  </li>
-  <li>
-    This repo (digital twin control benchmark): (add your new repo link here)
-  </li>
-</ul>
-
-<hr/>
 
 <div align="center">
   <p>
