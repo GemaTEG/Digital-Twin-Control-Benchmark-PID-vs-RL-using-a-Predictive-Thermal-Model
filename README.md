@@ -2,7 +2,7 @@
   <h1>Digital Twin Control Benchmark (PID/PI vs RL) using a Predictive Thermal Model</h1>
   <p>
     A simulation framework that turns a trained thermal predictor into a <b>digital twin</b> and benchmarks
-    <b>classical control</b> (PI/PID) against <b>Reinforcement Learning</b> (RL) for temperature regulation.
+    <b>classical control</b> (PI/PID) against <b>Reinforcement Learning</b> (RL) for temperature regulation in a gymnasium enviroment.
   </p>
 
   <p>
